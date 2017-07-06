@@ -1,0 +1,17 @@
+export const GET_USER_INFO = 'GET_USER_INFO'
+export const GET_TOKEN = 'GET_TOKEN'
+// export const CANDIDATE = 'CANDIDATE'
+// export const CANDIDATE = 'CANDIDATE'
+export const UPDATE_EMAIL = 'UPDATE_EMAIL'
+export const UPDATE_NICKNAME = 'UPDATE_NICKNAME'
+export const UPDATE_IDCARD = 'UPDATE_IDCARD'
+export const UPDATE_NAME = 'UPDATE_NAME'
+
+// 订单列表
+export const GET_TOPICS_LIST = 'GET_TOPICS_LIST'
+export const GET_SEARCH_KEY = 'GET_SEARCH_KEY'
+export const GET_PAGE_NUM = 'GET_PAGE_NUM'
+export const GET_SCORLL_STATUS = 'GET_SCORLL_STATUS'
+
+export const COM_LOADING_STATUS = 'COM_LOADING_STATUS'
+

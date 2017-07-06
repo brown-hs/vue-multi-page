@@ -1,0 +1,363 @@
+/**
+ * @Author:      lily 
+ * @DateTime:    2017-03-28 14:34:52
+ */
+ @import "src/scss/base/necessary";
+ // $font-sz-14: @include px2px(font-size, 28)
+ // $font-sz-12: @include px2px(font-size, 24)
+.addEmail{
+  .panel{
+    @include px2px(font-size, 30);
+    position: relative;
+    top: px2rem(200);
+    left: 5%;
+    width: 90%;
+    height: px2rem(660);
+    background: #FFFFFF;
+    box-shadow: 0 2px 12px 0 rgba(110,110,110,0.50);
+    border-radius: px2rem(8);
+    h2{
+      width: 100%;
+      height: px2rem(100);
+      line-height: px2rem(100);
+      text-align: center;
+      color: #666;
+      border-bottom: 1px solid #dedede;
+    }
+    ul{
+      margin: px2rem(100) auto;
+      width: 90%;
+      font-size: 0;
+      li.flex{
+        height: px2rem(100);
+        line-height: px2rem(100);
+        border-radius: px2rem(4);
+        border: 1px solid #ccc;
+        padding: px2rem(20);
+      }
+      li.code{
+        position: relative;
+      }
+      li{
+        display: flex;
+        margin-bottom: px2rem(70);
+        input.text{
+          @include px2px(font-size, 30);
+          width: 90%;
+          height: px2rem(60);
+          line-height: px2rem(60);
+        }
+        .codeInput{
+          height: px2rem(100);
+          line-height: px2rem(100);
+          border-radius: px2rem(4);
+          border: 1px solid #ccc;
+          width: 56%;
+          padding: px2rem(17);
+          input{
+            @include px2px(font-size, 30);
+            width: 90%;
+            height: px2rem(60);
+            line-height: px2rem(60);
+          }
+        }
+        .codeBtn{
+          position: absolute;
+          top: 0;
+          right: 0;
+          @include px2px(font-size, 26);
+          width: 38%;
+          color: #666;
+          height: px2rem(100);
+          line-height: px2rem(100);
+          border-radius: px2rem(4);
+          border: 1px solid #ccc;
+          background-color: $color-white;
+          &.active{
+            color: $color-blue;
+            border-color: $color-blue;
+          }
+        }
+      }
+    }
+    .btn{
+      @include px2px(font-size, 30);
+      position: absolute;
+      bottom: px2rem(-20);
+      left: 0;
+      height: px2rem(100);
+      border-radius: 0 0 px2rem(8) px2rem(8);
+    }
+  }
+  .bindShow{
+    position: relative;
+    // top: 20%;
+    top: px2rem(200);
+    left: 5%;
+    width: 90%;
+    box-shadow: 0 2px 12px 0 rgba(110,110,110,0.50);
+    overflow: hidden;
+  }
+  .callTips{
+    position: relative;
+    top: px2rem(400);
+    text-align: center;
+    font-weight: 200;
+    @include px2px(font-size, 32);
+    color: #999;
+    letter-spacing: -0.39px;
+  }
+}
+.aboutYBD{
+  .img {
+    img{
+      width: 100%;
+    }
+  }
+  p{
+    text-indent: 0.8rem;
+    line-height: 2;
+    padding: px2rem(20) px2rem(20) 0 px2rem(20);
+    @include px2px(font-size, 30);
+  }
+}
+.user{
+    margin: px2rem(20) 0 0 0;
+    width: 100%;
+    height: px2rem(200);
+    .panel{
+      position: relative;
+      background: #fff;
+      width: 100%;
+      height: px2rem(100);
+      border-bottom: 1px solid #f1f1f1;
+      span{
+        position: absolute;
+        top: px2rem(38);
+        &.icon{
+          left: px2rem(24);
+          @include px2px(font-size, 36)
+          color: #666;
+        }
+        &.icon-email{
+          @include px2px(font-size, 32)
+        }
+        &.title{
+          left: px2rem(104);
+          vertical-align: top;
+          margin-top: px2rem(4);
+          @include px2px(font-size, 30)
+          color: #4d4d4d;
+        }
+        &.name{
+          right: px2rem(64);
+          vertical-align: top;
+          color: #777;
+          @include px2px(font-size, 30)
+        }
+        &.rightIcon{
+          right:  px2rem(24);
+          color: #ccc;
+        }
+      }
+    }
+    .email-panel{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .6);
+      .panelBox{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        width: 90%;
+        .cantBind{
+          margin-top: px2rem(80);
+          text-align: center;
+          @include px2px(font-size, 38);
+        }
+      }
+    }  
+}
+.changeNick{
+    margin:  px2rem(20) 0 0 0;
+    .panel{
+      .name {
+        background: #fff;
+        height: px2rem(100);
+        width: 100%;
+        @include px2px(font-size, 30)
+        padding: 0 0 0 px2rem(40);
+      }
+    }
+}
+.changePsw{
+    margin: px2rem(20) 0 0 0;
+    .panel{
+      .name {
+        padding: 0 0 0 px2rem(40);
+        height: px2rem(100);
+        width: 100%;
+        @include px2px(font-size, 28)
+        font-weight: $font-weight-light;
+      }
+    }
+    .newpsw{
+      margin: px2rem(24) 0 0 0;
+      input{
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+}
+.register{
+  width: 90%;
+  margin: px2rem(40) auto 0;
+  .phone{
+    margin: px2rem(40) auto 0;
+    height: px2rem(80);
+    line-height: px2rem(80);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    @include px2px(font-size, 28)
+    input{
+      display: inline-block;
+      width: 60%;
+      height: px2rem(60);
+      line-height: px2rem(60);
+      @include px2px(font-size, 28)
+    }
+  }
+  .com{
+    label.allLabel{
+      padding: 0 px2rem(12);
+      display: inline-block;
+      width: px2rem(112);
+      color: #333;
+      @include px2px(font-size, 24)        
+    }
+    input.allInput{
+      display: inline-block;
+      width: 60%;
+      height: px2rem(60);
+      line-height: px2rem(60);
+      @include px2px(font-size, 26)        
+    }
+  }
+  .code{
+    position: relative;
+    display: flex;
+    margin: px2rem(30) auto;
+    height: px2rem(80);
+    line-height: px2rem(80);
+    @include px2px(font-size, 28)
+    .codeInput{
+      width: 66%;
+      // margin-right: px2rem(20);
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      @include px2px(font-size, 28)
+      background: #fff;
+      height: px2rem(80);
+      line-height: px2rem(80);
+      overflow: hidden;
+    }
+    .codeBtn{
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      width: 30%;
+      height: px2rem(80);
+      background: #fff;
+      color: #777;
+      @include px2px(font-size, 20)
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fff;
+      cursor: pointer;
+      &.active{
+        border-color:  #45AEFF;
+        color:  #45AEFF;
+      }
+    }
+  }
+  .title{
+    margin-bottom: px2rem(40);
+    color: $color-title;
+    @include px2px(font-size, 34);
+    font-weight: $font-weight-light;
+  }
+  .word{
+    margin: px2rem(40) auto;
+    text-align: center;
+    height: px2rem(30);
+    @include px2px(font-size, 24);
+    .check{
+      @extend .color-blue;
+      vertical-align: middle;
+    }
+    .checkActive{
+      border: 1px solid #888;
+      border-radius: 3px;
+      width: px2rem(25);
+      height: px2rem(25);
+      display: inline-block;
+      vertical-align: middle;
+    }
+    color: $color-title;
+    .clickTip{
+      color: $color-blue;
+      border-bottom: 1px solid $color-blue;
+    }
+  }
+  .form{
+    .flex {
+      width: 100%;
+      height: px2rem(80);
+      border-radius: $border-radius;
+      border: 1px solid $border-color;
+      padding: px2rem(10) 0;
+      background:#fff;
+    }
+    input.input-text {
+      width: 100%;
+      display: inline-block;
+      height: px2rem(60);
+      line-height: px2rem(60);
+      text-align: left;
+      padding-left: px2rem(50);
+      @include px2px(font-size, 26)
+      color: #333333;
+    }
+  }
+}
+.notice{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  .notice-content{
+    margin: 15% auto 0;
+    padding: px2rem(28);
+    width: 88%;
+    height: 80%;
+    background: #fff;
+    color: #666;
+    overflow: scroll;
+    line-height: 0.8rem;
+    h2{
+      color: #333;
+      text-align: center;
+      @include px2px(font-size, 30)
+    }
+    .title{
+      @include px2px(font-size, 26)
+      margin: px2rem(24) 0;
+    }
+  }
+}
